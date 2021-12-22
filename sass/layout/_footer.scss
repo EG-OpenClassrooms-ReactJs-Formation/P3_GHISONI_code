@@ -1,0 +1,19 @@
+footer {
+    padding-left: 8%;
+    background-color: $colour-footer;
+    color: white;
+}
+.footer-logo-container {
+    color:white;
+    height: 30px;
+    padding-right: 60px;
+}
+
+.footer-logo {
+    filter: invert(1);
+    object-fit: cover;
+}
+
+.footer-sentence-icon {
+    display: flex;
+}
