@@ -5,6 +5,9 @@
     align-items: center;
     justify-content:center;
     background-color: $colour-secondary;
+    padding-left: $padding-side-size;
+    padding-right: $padding-side-size;
+    text-align: center;
     &--button {
         border-radius: 30px;
         padding: 10px;

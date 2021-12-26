@@ -1,15 +1,20 @@
+.fonction-container{
+    padding-left: $padding-side-size;
+    padding-right: $padding-side-size;
+}
 .fonction-container-card {
     display: flex;
     
     background-color: $colour-secondary;
     box-shadow: black;
+    /*
     width: 80%;
     margin-left: 10%;
+    */
     height: 80px;
     border-radius: 20px;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 5%;
+    
 }
 
 .fonction-container-number {
@@ -31,4 +36,7 @@
     background-color: $colour-secondary;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: $padding-side-size;
+    padding-right: $padding-side-size;
+
 }
