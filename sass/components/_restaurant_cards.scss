@@ -40,19 +40,29 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
-.restaurant-card-icon {
-    // padding-top: 40px;
-    // padding-left: 30%;
-    position:absolute;
-    margin-left: 75%;
+/*
+    Heart checkbox
+*/
+.like-checkbox{
+    padding-right: 20px;
     
-    color: white;
-    //text-shadow: 0 0 5px #000;
-    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
-    &:hover{
-        color: #a55ddc;
-    }
-
+}
+.like-checkbox input[type='checkbox'] {
+    
+    display:none;
+    position: relative;
+}
+.like-checkbox input[type='checkbox']+ label:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f004";
+	cursor:pointer;
+    
+    
+}
+.like-checkbox input[type='checkbox']:checked + label:before {
+    font-weight:600;
+    color: #a355dd;
 }

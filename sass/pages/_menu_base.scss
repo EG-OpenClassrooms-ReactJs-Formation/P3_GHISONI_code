@@ -62,7 +62,7 @@
 }
 
 .menu-plat-card{
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: $colour-primary;
@@ -71,6 +71,42 @@
     margin-right: $padding-side-size;
     padding-top: 8px;
     padding-bottom: 8px;
+    overflow: hidden;
+
+    &:hover{
+        .menu-check-container{
+            transform: translate(0px);
+        }
+        .menu-plat-price{
+            transform: translate(0px);
+        }
+        .menu-icone-container{
+            transform: rotate(0deg);
+        }
+    }
+
+    animation: menu-cards-fade-in 0.5s linear forwards;
+}
+
+.menu-check-container{
+    
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: $colour-menu-check-background;
+    height: 100%;
+    width: 60px;
+    transform: translate(60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s linear;
+}
+
+.menu-icone-container{
+    color: white;
+    transform: rotate(-360deg);
+    transition: transform 500ms linear;
 }
 
 .menu-plat-content{
@@ -78,7 +114,24 @@
 }
 
 .menu-plat-price {
-    position:absolute;
+    position: absolute;
     font-weight: bold;
-    margin-left: 75%;
+    right: 100px;
+    transform: translate(60px);
+    transition: 0.5s linear;
+}
+
+@keyframes menu-cards-fade-in {
+	0% {
+		opacity: 0;
+		transform: translatey(30px);
+	}
+    50% {
+    	opacity: 0.5;
+        transform: translatey(15px);
+	}
+	100% {
+    	opacity: 1;
+        transform: translatey(0px);
+	}
 }

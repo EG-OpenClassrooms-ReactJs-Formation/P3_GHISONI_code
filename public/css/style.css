@@ -84,16 +84,30 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
-.restaurant-card-icon {
-  position: absolute;
-  margin-left: 75%;
-  color: white;
-  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+/*
+    Heart checkbox
+*/
+.like-checkbox {
+  padding-right: 20px;
 }
-.restaurant-card-icon:hover {
-  color: #a55ddc;
+
+.like-checkbox input[type=checkbox] {
+  display: none;
+  position: relative;
+}
+
+.like-checkbox input[type=checkbox] + label:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  cursor: pointer;
+}
+
+.like-checkbox input[type=checkbox]:checked + label:before {
+  font-weight: 600;
+  color: #a355dd;
 }
 
 .header {
@@ -214,6 +228,57 @@ footer {
   padding-right: 4%;
 }
 
+.loader-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  opacity: 0;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: loader-animation 0.1s forwards;
+  /*
+     replace by these values after coding phase
+     animation: loader-animation 3s forwards;
+     */
+}
+
+.loader-logo-container {
+  width: 400px;
+  height: 150px;
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    transform: translatey(0px);
+    background-color: rgba(46, 60, 66, 0.7);
+  }
+  25% {
+    opacity: 1;
+    transform: translatey(-20px);
+    background-color: rgba(46, 60, 66, 0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: translatey(0px);
+    background-color: rgba(46, 60, 66, 0.7);
+  }
+  75% {
+    background-color: rgba(46, 60, 66, 0.7);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
 .header-menu {
   height: 90px;
   display: flex;
@@ -277,6 +342,7 @@ footer {
 }
 
 .menu-plat-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -285,6 +351,37 @@ footer {
   margin-right: 4%;
   padding-top: 8px;
   padding-bottom: 8px;
+  overflow: hidden;
+  animation: menu-cards-fade-in 0.5s linear forwards;
+}
+.menu-plat-card:hover .menu-check-container {
+  transform: translate(0px);
+}
+.menu-plat-card:hover .menu-plat-price {
+  transform: translate(0px);
+}
+.menu-plat-card:hover .menu-icone-container {
+  transform: rotate(0deg);
+}
+
+.menu-check-container {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #99e2d0;
+  height: 100%;
+  width: 60px;
+  transform: translate(60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s linear;
+}
+
+.menu-icone-container {
+  color: white;
+  transform: rotate(-360deg);
+  transition: transform 500ms linear;
 }
 
 .menu-plat-content {
@@ -294,9 +391,25 @@ footer {
 .menu-plat-price {
   position: absolute;
   font-weight: bold;
-  margin-left: 75%;
+  right: 100px;
+  transform: translate(60px);
+  transition: 0.5s linear;
 }
 
+@keyframes menu-cards-fade-in {
+  0% {
+    opacity: 0;
+    transform: translatey(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translatey(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
 /*
 @import "./pages/work";
 @import "./pages/about";
