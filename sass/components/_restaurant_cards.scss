@@ -6,10 +6,12 @@
     border-radius: 15px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 300px;
     transition: 0.3s;
     background-color: $colour-primary;
     text-decoration: none;
     color: black;
+    margin-top: $spacer-restaurant-cards;
 }
 
 .restaurant-picture-container {
@@ -65,4 +67,10 @@
 .like-checkbox input[type='checkbox']:checked + label:before {
     font-weight:600;
     color: #a355dd;
+}
+
+@media all and (min-width: $breakpoint_tablet){
+    .restaurant-card {
+        max-width: 32%;
+    }
 }

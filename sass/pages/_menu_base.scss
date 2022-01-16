@@ -30,7 +30,7 @@
 
 .menu-container{
     padding-left: $padding-side-size;
-    
+    padding-right: $padding-side-size;
     border-radius: 40px 40px 0% 0%;
     background-color: $colour-secondary;
 
@@ -43,6 +43,7 @@
 .menu-container-row{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .menu-category-title{
@@ -68,17 +69,18 @@
     background-color: $colour-primary;
     border-radius: 20px;
     padding-left: $padding-side-size;
-    margin-right: $padding-side-size;
+    
     padding-top: 8px;
     padding-bottom: 8px;
     overflow: hidden;
+    margin-top: $spacer-menu-cards;
 
     &:hover{
         .menu-check-container{
             transform: translate(0px);
         }
         .menu-plat-price{
-            transform: translate(0px);
+            transform: translate(-60px);
         }
         .menu-icone-container{
             transform: rotate(0deg);
@@ -111,13 +113,18 @@
 
 .menu-plat-content{
     display: flex;
+    justify-content: space-between;
 }
 
 .menu-plat-price {
+    /*
     position: absolute;
-    font-weight: bold;
     right: 100px;
-    transform: translate(60px);
+    */
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 70px;
+    transform: translate(0px);
     transition: 0.5s linear;
 }
 
@@ -134,4 +141,13 @@
     	opacity: 1;
         transform: translatey(0px);
 	}
+}
+
+.menu-command-button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: $spacer-menu-cards;
 }

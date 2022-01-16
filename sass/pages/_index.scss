@@ -1,36 +1,7 @@
-.fonction-container{
+.function-section{
     padding-left: $padding-side-size;
-    padding-right: $padding-side-size;
-}
-.fonction-container-card {
-    display: flex;
-    
-    background-color: $colour-secondary;
-    box-shadow: black;
-    /*
-    width: 80%;
-    margin-left: 10%;
-    */
-    height: 80px;
-    border-radius: 20px;
-    align-items: center;
-    
 }
 
-.fonction-container-number {
-    position: relative;
-    right: 13px; 
-    background-color: #9356dc;
-    text-align: center;
-    align-self: center;
-    width: $fonction-circle-size;
-    height: $fonction-circle-size;
-    border-radius: 50%;
-    display: flex; /* or inline-flex */
-    align-items: center; 
-    justify-content: center;
-    color: white;
-}
 
 .restaurant-section{
     background-color: $colour-secondary;
@@ -41,6 +12,19 @@
 
 }
 
+@media all and (min-width: $breakpoint_tablet){
+    .restaurant-grid{
+        
+            display: flex;                       /* establish flex container */
+            flex-wrap: wrap;                     /* enable flex items to wrap */
+            justify-content: space-between;
+        
+    }
+}
+
+/****************************************************************
+Loader
+****************************************************************/
 .loader-logo {
     position: fixed;
     top:0;
@@ -63,7 +47,6 @@
 	
     
 }
-
 
 .loader-logo-container{
     width: 400px;

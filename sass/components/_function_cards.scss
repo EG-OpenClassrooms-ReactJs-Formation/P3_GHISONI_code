@@ -1,0 +1,51 @@
+.fonction-container{
+    padding-left: $padding-side-size;
+    padding-right: $padding-side-size;
+    &:hover{
+        .fonction-container-card{
+            background-color: $background-color-active-function-card;
+            box-shadow: $shadow-function-active-card;
+        }
+        
+        .function-container-icon{
+            color: $colour-function-number;
+            
+        }
+    }
+}
+.fonction-container-card {
+    display: flex;
+    
+    background-color: $colour-secondary;
+    box-shadow: black;
+    /*
+    width: 80%;
+    margin-left: 10%;
+    */
+    height: 80px;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: $spacer-function-cards;
+    box-shadow: $shadow-function-card;
+}
+
+.fonction-container-number {
+    position: relative;
+    right: 13px; 
+    background-color: #9356dc;
+    text-align: center;
+    align-self: center;
+    width: $fonction-circle-size;
+    height: $fonction-circle-size;
+    border-radius: 50%;
+    display: flex; /* or inline-flex */
+    align-items: center; 
+    justify-content: center;
+    color: white;
+}
+.function-container-icon{
+    color: $colour-inactive-icon;
+    padding-right: 24px;
+    padding-left: 16px;
+
+}
