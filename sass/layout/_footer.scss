@@ -1,5 +1,6 @@
 footer {
     padding-left: 8%;
+    padding-top: 20px;
     background-color: $colour-footer;
     color: white;
 }
@@ -10,6 +11,7 @@ footer {
 }
 
 .footer-logo {
+    
     filter: invert(1);
     object-fit: cover;
 }
