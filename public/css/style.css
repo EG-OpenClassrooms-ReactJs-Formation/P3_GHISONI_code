@@ -459,6 +459,19 @@ Loader
     transform: translatey(0px);
   }
 }
+.menu-plat-title {
+  margin-right: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-plat-components {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .menu-command-button {
   display: flex;
   justify-content: center;

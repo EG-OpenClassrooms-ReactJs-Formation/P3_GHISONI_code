@@ -143,6 +143,20 @@
 	}
 }
 
+.menu-plat-title{
+    margin-right: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-plat-components{
+    //margin-right: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .menu-command-button{
     
     display: flex;
