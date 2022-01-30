@@ -5,7 +5,7 @@
 
 .restaurant-section{
     background-color: $colour-secondary;
-    padding-top: 50px;
+    padding-top: 1px;
     padding-bottom: 50px;
     padding-left: $padding-side-size;
     padding-right: $padding-side-size;
@@ -15,9 +15,9 @@
 @media all and (min-width: $breakpoint_tablet){
     .restaurant-grid{
         
-            display: flex;                       /* establish flex container */
-            flex-wrap: wrap;                     /* enable flex items to wrap */
-            justify-content: space-between;
+        display: flex;                       /* establish flex container */
+        flex-wrap: wrap;                     /* enable flex items to wrap */
+        justify-content: space-between;
         
     }
 }

@@ -1,4 +1,5 @@
 footer {
+    min-width: 400px;
     padding-left: 8%;
     padding-top: 20px;
     background-color: $colour-footer;
@@ -6,8 +7,9 @@ footer {
 }
 .footer-logo-container {
     color:white;
-    height: 30px;
+    height: 25px;
     padding-right: 60px;
+    margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -22,4 +24,9 @@ footer {
 
 .footer-icon-container{
     padding-right: 16px;
+}
+
+.footer-sentence-text{
+    color: white;
+    font-size: 16px;
 }

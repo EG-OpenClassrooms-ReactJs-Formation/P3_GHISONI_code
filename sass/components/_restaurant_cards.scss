@@ -15,6 +15,7 @@
 }
 
 .restaurant-picture-container {
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -27,24 +28,47 @@
 }
 .restaurant-card-title {
     padding-left: 20px;
-    padding-bottom: 10px;
+    //padding-bottom: 10px;
     padding-top: 10px;
     font-weight: bold;
     font-size: 18px;
+    margin: 0px;
 }
 .restaurant-card-content {
 
     padding-left: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 .restaurant-card-row {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
+.restaurant-card-new-indicator {
+    position: absolute;
+    background-color: #99e2d0;
+    color: #40ad92;
+    right: 15px;
+    top: 20px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    &-text{
+        font-weight: 400;
+        font-size: 16px;
+        color: #3ba188;
+    }
+}
+
+.function-text{
+    font-weight: 500;
+}
 /*
     Heart checkbox
 */
