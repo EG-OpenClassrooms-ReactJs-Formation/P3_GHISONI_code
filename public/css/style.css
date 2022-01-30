@@ -15,6 +15,7 @@ html {
 body {
   box-sizing: border-box;
   background: #fff;
+  min-width: 400px;
 }
 
 body {
@@ -148,9 +149,19 @@ button {
 
 .like-checkbox input[type=checkbox]:checked + label:before {
   font-weight: 600;
-  color: #a355dd;
+  animation-name: colorFillLike;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes colorFillLike {
+  from {
+    color: white;
+  }
+  to {
+    color: #a355dd;
+  }
+}
 @media all and (min-width: 992px) {
   .restaurant-card {
     max-width: 32%;
@@ -268,10 +279,15 @@ background-image: url(../../../images/logo/ohmyfood.png);
   border-radius: 30px;
   padding: 10px;
   background: linear-gradient(0deg, #a355dd 35%, #de65d9 100%);
+  box-shadow: 0px 3px 5px #b1aeae;
   border: none;
   color: white;
   margin-top: 50px;
   margin-bottom: 60px;
+}
+.cta-container--button:hover {
+  background: linear-gradient(0deg, #aa62e0 35%, #e172dc 100%);
+  box-shadow: 0px 3px 5px #7f7a7a;
 }
 
 footer {
