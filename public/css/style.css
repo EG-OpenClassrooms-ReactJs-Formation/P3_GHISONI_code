@@ -114,13 +114,13 @@ button {
   top: 20px;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
   border-radius: 4px;
 }
 .restaurant-card-new-indicator-text {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   color: #3ba188;
 }
 
@@ -360,7 +360,7 @@ Loader
   align-items: center;
   overflow: hidden;
   transform: translatey(0px);
-  animation: loader-animation 0.1s forwards;
+  animation: loader-animation 3s forwards;
   /*
      replace by these values after coding phase
      animation: loader-animation 3s forwards;

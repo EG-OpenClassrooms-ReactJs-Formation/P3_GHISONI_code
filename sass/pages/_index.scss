@@ -39,7 +39,7 @@ Loader
     
 	overflow: hidden;
 	transform: translatey(0px);
-    animation: loader-animation 0.1s forwards;
+    animation: loader-animation $loader-animation-duration forwards;
 	/*
     replace by these values after coding phase
     animation: loader-animation 3s forwards;
