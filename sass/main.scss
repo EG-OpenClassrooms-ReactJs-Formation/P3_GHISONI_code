@@ -1,12 +1,10 @@
 @import "./utils/variables";
 @import "./utils/functions";
-@import "./utils/mixins";
 @import "./utils/extensions";
 
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons";
 @import"./components/restaurant_cards";
 @import"./components/function_cards";
 
@@ -19,8 +17,3 @@
 
 @import "./pages/index";
 @import "./pages/menu_base";
-/*
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
-*/

@@ -96,9 +96,10 @@
     animation-duration: 1.5s;  
     animation-fill-mode: forwards;
 }
+
 @keyframes colorFillLike {
     from {color:white;}
-    to {color: #a355dd;}
+    to {color: $like-color;}
   }
 @media all and (min-width: $breakpoint_tablet){
     .restaurant-card {
