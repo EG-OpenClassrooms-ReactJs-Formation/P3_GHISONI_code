@@ -51,6 +51,10 @@ textarea {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*
 button {
     font-family: 'Roboto', sans-serif;
@@ -182,7 +186,6 @@ button {
 .fonction-container-card {
   display: flex;
   background-color: #F6F5F5;
-  box-shadow: black;
   height: 80px;
   border-radius: 20px;
   align-items: center;
